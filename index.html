@@ -1029,7 +1029,7 @@
 <body>
 
   <header>
-    <img src="images/Logo.png" alt="Logo MSB Menuiserie" class="logo" onerror="showPlaceholder(this, 'Logo MSB Menuiserie')">
+    <img src="./images/Logo.png" alt="Logo MSB Menuiserie" class="logo" onerror="showPlaceholder(this, 'Logo MSB Menuiserie')">
     <h1>MSB Menuiserie - Serigne Babacar SY</h1>
     <p class="intro">Fabrication locale & design moderne de mobilier sur mesure à Grand Mbao</p>
   </header>
@@ -1082,29 +1082,29 @@
   <section id="gallery">
     <h2>Nos Réalisations</h2>
     <div class="gallery">
-      <div class="gallery-item" onclick="openLightbox('images/Cuisine moderne.JPG', 'Cuisine moderne sur mesure')">
-        <img src="images/Cuisine moderne.JPG" alt="Cuisine moderne MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Cuisine Moderne')">
+      <div class="gallery-item" onclick="openLightbox('./images/Cuisine moderne.JPG', 'Cuisine moderne sur mesure')">
+        <img src="./images/Cuisine moderne.JPG" alt="Cuisine moderne MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Cuisine Moderne')">
         <div class="gallery-overlay">
           <h4>Cuisine moderne</h4>
           <p>Sur mesure</p>
         </div>
       </div>
-      <div class="gallery-item" onclick="openLightbox('images/dressing sur mesure.JPG', 'Dressing sur mesure élégant')">
-        <img src="images/dressing sur mesure.JPG" alt="Dressing sur mesure MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Dressing Sur Mesure')">
+      <div class="gallery-item" onclick="openLightbox('./images/dressing sur mesure.JPG', 'Dressing sur mesure élégant')">
+        <img src="./images/dressing sur mesure.JPG" alt="Dressing sur mesure MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Dressing Sur Mesure')">
         <div class="gallery-overlay">
           <h4>Dressing sur mesure</h4>
           <p>Élégant et fonctionnel</p>
         </div>
       </div>
-      <div class="gallery-item" onclick="openLightbox('images/Porte en bois.JPG', 'Porte en bois massif artisanale')">
-        <img src="images/Porte en bois.JPG" alt="Porte en bois MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Porte Bois')">
+      <div class="gallery-item" onclick="openLightbox('./images/Porte en bois.JPG', 'Porte en bois massif artisanale')">
+        <img src="./images/Porte en bois.JPG" alt="Porte en bois MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Porte Bois')">
         <div class="gallery-overlay">
           <h4>Porte en bois</h4>
           <p>Massif artisanale</p>
         </div>
       </div>
-      <div class="gallery-item" onclick="openLightbox('images/bibliotheque.JPG', 'Bibliothèque intégrée sur mesure')">
-        <img src="images/bibliotheque.JPG" alt="Bibliothèque MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Bibliothèque')">
+      <div class="gallery-item" onclick="openLightbox('./images/bibliotheque.JPG', 'Bibliothèque intégrée sur mesure')">
+        <img src="./images/bibliotheque.JPG" alt="Bibliothèque MSB Menuiserie" loading="lazy" decoding="async" onerror="showPlaceholder(this, 'Bibliothèque')">
         <div class="gallery-overlay">
           <h4>Bibliothèque</h4>
           <p>Intégrée sur mesure</p>
@@ -1185,7 +1185,6 @@
           <label for="budget">Budget estimatif</label>
           <select id="budget" name="budget">
             <option value="">Choisissez une fourchette</option>
-            <option value="-200">Moin - 200 000 FCFA</option>
             <option value="200-400">200 000 - 400 000 FCFA</option>
             <option value="400-600">400 000 - 600 000 FCFA</option>
             <option value="600-800">600 000 - 800 000 FCFA</option>
@@ -1225,7 +1224,7 @@
     <h2>Notre Atelier</h2>
     <div class="location-info">
       <h3>MSB Menuiserie - Serigne Babacar SY</h3>
-      <p><strong>Adresse :</strong> Grand Mbao - Rond point en face restaurant Le Boulvard, Dakar</p>
+      <p><strong>Adresse :</strong> Grand Mbao - Cité Médine, Dakar</p>
       <p><strong>Zone d'intervention :</strong> Dakar et toute la région</p>
       <a href="https://maps.google.com/maps?q=14.731241226196289%2C-17.320669174194336&z=17&hl=fr" class="btn" target="_blank" style="margin-top: 20px;">
         <i class="fas fa-route"></i> Obtenir l'itinéraire
@@ -1344,7 +1343,7 @@
   </section>
 
   <footer>
-    © 2025 G2M Service - Guissoumala Mbao Services • Rond Point Grand Mbao en face Le Boulvard • Agence de Communication
+    © 2025 G2MS - Guissoumala Mbao Services • Rond Point Grand Mbao en face Le Boulvard • Agence de Communication
   </footer>
 
   <a href="https://wa.me/221770542530" class="whatsapp-float" target="_blank">
@@ -1444,7 +1443,7 @@
 
       // Validate phone
       const phone = document.getElementById('client-phone').value.trim();
-      const phoneRegex = /^(77|71|76|70|78)[0-9]{7}$/;
+      const phoneRegex = /^(77|76|70|78)[0-9]{7}$/;
       if (!phone || !phoneRegex.test(phone)) {
         document.getElementById('phone-error').style.display = 'block';
         document.getElementById('client-phone').parentElement.classList.add('error');
